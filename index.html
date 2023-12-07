@@ -20,6 +20,18 @@
     .font-lato {
       font-family: 'Lato', sans-serif;
     }
+
+    .why h3 {
+      color: black;
+    }
+
+    .why p {
+      color: gray;
+    }
+
+    .why svg {
+      color: gray;
+    }
   </style>
 </head>
 
@@ -37,15 +49,10 @@
               </svg>
             </div>
             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>Item 1</a></li>
-              <li>
-                <a>Parent</a>
-                <ul class="p-2">
-                  <li><a>Home</a></li>
-                  <li><a>Shop</a></li>
-                  <li><a>About Us</a></li>
-                  <li><a>Contact</a></li>
-                </ul>
+              <li><a>Home</a></li>
+              <li><a>Shop</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Contact</a></li>
           </div>
         </div>
         <div class="navbar-start hidden lg:flex">
@@ -57,8 +64,10 @@
           </ul>
         </div>
         <div class="navbar-center gap-2">
-          <img class="sm:w-9 md:w-fit" src="./images/logo.png" alt="">
-          <a class="font-bold text-3xl md:text-4xl md:text-white">Fruit Burst</a>
+          <a href="" class="flex justify-center items-center">
+            <img class="sm:w-9 md:w-fit" src="./images/logo.png" alt="">
+          <h3 class="font-bold text-3xl md:text-4xl md:text-white">Fruit Burst</h3>
+          </a>
         </div>
         <div class="navbar-end hidden md:flex">
           <div class="form-control">
@@ -70,30 +79,75 @@
     <!-- hero section starts -->
     <section class="max-w-screen-2xl mx-auto px-4 md:px-8 lg:px-16 my-10">
       <!-- carousel banner -->
-      <div class="carousel w-full">
+      <div class="carousel w-full rounded-2xl">
         <div id="slide1" class="carousel-item relative w-full">
-          <img src="./images/banner1.png" class="w-full" />
+          <!-- <img src="./images/banner1.png" class="w-full" /> -->
+          <!-- bgimg and overlay -->
+          <div
+            class="hero bg-[url('./images/banner1.png'),linear-gradient(180deg,black,transparent)] bg-blend-overlay text-white">
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md md:py10 lg:py-28">
+                <h1 class="mb-5 text-3xl md:text-5xl font-extrabold ">Exotic tastes at your doorstep</h1>
+                <p class="mb-5 text-sm md:text-xl font-medium">We supply highly quality organic products</p>
+                <button class="btn btn-error text-white">Shop Now</button>
+              </div>
+            </div>
+          </div>
+
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide4" class="btn btn-circle">❮</a>
             <a href="#slide2" class="btn btn-circle">❯</a>
           </div>
         </div>
         <div id="slide2" class="carousel-item relative w-full">
-          <img src="./images/banner2.png" class="w-full" />
+          <!-- bgimg and overlay -->
+          <div
+            class="hero bg-[url('./images/banner2.png'),linear-gradient(180deg,black,transparent)] bg-blend-overlay text-white">
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-3xl md:text-5xl font-extrabold ">Exotic tastes at your doorstep</h1>
+                <p class="mb-5 text-sm md:text-xl font-medium">We supply highly quality organic products</p>
+                <button class="btn btn-error text-white">Shop Now</button>
+              </div>
+            </div>
+          </div>
+
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide1" class="btn btn-circle">❮</a>
             <a href="#slide3" class="btn btn-circle">❯</a>
           </div>
         </div>
         <div id="slide3" class="carousel-item relative w-full">
-          <img src="./images/banner3.png" class="w-full" />
+          <!-- bgimg and overlay -->
+          <div
+            class="hero bg-[url('./images/banner3.png'),linear-gradient(180deg,black,transparent)] bg-blend-overlay text-white">
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-3xl md:text-5xl font-extrabold ">Exotic tastes at your doorstep</h1>
+                <p class="mb-5 text-sm md:text-xl font-medium">We supply highly quality organic products</p>
+                <button class="btn btn-error text-white">Shop Now</button>
+              </div>
+            </div>
+          </div>
+
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide2" class="btn btn-circle">❮</a>
             <a href="#slide4" class="btn btn-circle">❯</a>
           </div>
         </div>
         <div id="slide4" class="carousel-item relative w-full">
-          <img src="./images/banner4.png" class="w-full" />
+          <!-- bgimg and overlay -->
+          <div
+            class="hero bg-[url('./images/banner4.png'),linear-gradient(180deg,black,transparent)] bg-blend-overlay text-white">
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-3xl md:text-5xl font-extrabold ">Exotic tastes at your doorstep</h1>
+                <p class="mb-5 text-sm md:text-xl font-medium">We supply highly quality organic products</p>
+                <button class="btn btn-error text-white">Shop Now</button>
+              </div>
+            </div>
+          </div>
+
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide3" class="btn btn-circle">❮</a>
             <a href="#slide1" class="btn btn-circle">❯</a>
@@ -399,8 +453,7 @@
     </section>
     <!-- teams section -->
     <section
-      class="bg-[url('../images/team.png')] bg-no-repeat bg-cover bg-center py-32 px-8 md:px-20 lg:px-36 my-10 rounded-3xl text-white">
-      <div class="hero-overlay bg-opacity-40"></div>
+      class="bg-[url('./images/team.png'),linear-gradient(180deg,black,transparent)] bg-blend-overlay bg-no-repeat bg-cover bg-center py-32 px-8 md:px-20 lg:px-36 my-10 rounded-3xl text-white">
       <div class="text-center space-y-3">
         <h2 class="text-4xl md:text-5xl font-extrabold">Meet the Team</h2>
         <p class="font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of
@@ -663,10 +716,11 @@
 
     </section>
     <!-- Why Choose Us section -->
-    <section class="my-10">
+    <section class="why my-10">
       <div class="text-center space-y-5">
-        <h2 class="text-5xl font-extrabold">Why Choose Us</h2>
-        <p class="max-w-xl mx-auto">Contrary to popular belief, is not simply random text. It has roots in a piece of
+        <h2 class="text-3xl md:text-5xl font-extrabold text-black">Why Choose Us</h2>
+        <p class="max-w-xl mx-auto text-gray-600">Contrary to popular belief, is not simply random text. It has roots in
+          a piece of
           classical Latin literature
           from 45 BC, making it over 2000 years old.</p>
       </div>
